@@ -1,0 +1,18 @@
+{
+  "name": "@reneza/pi-recall",
+  "version": "0.1.0",
+  "description": "Standalone Pi extension that exposes trusted recall backends such as pi-codegraph inside the Pi agent harness",
+  "type": "module",
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "scripts": {
+    "test": "bash test/run.sh"
+  },
+  "files": ["src/", "vendor/", "README.md"],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "license": "MIT"
+}
